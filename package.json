@@ -1,0 +1,39 @@
+{
+  "name": "@ctokx/react-histograph",
+  "version": "1.0.0",
+  "description": "A React component for rendering interactive histograms using HTML canvas, perfect for data visualization and analysis.",
+  "main": "dist/Histogram.js",
+  "exports": {
+    ".": "./dist/Histogram.js",
+    "./react": "./dist/ReactHistogram.js"
+  },
+  "scripts": {
+    "build": "babel src --out-dir dist --extensions '.js'",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ctokx/react-histograph"
+  },
+  "keywords": [
+    "histogram",
+    "data visualization",
+    "react component",
+    "chart",
+    "graph",
+    "canvas",
+    "statistics",
+    "data analysis"
+  ],
+  "author": "Varol Cagdas Tok",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.3",
+    "@babel/preset-env": "^7.24.3",
+    "@babel/preset-react": "^7.24.1"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0"
+  }
+}
